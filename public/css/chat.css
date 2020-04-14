@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px !important;
+  /* padding: 25px !important; */
+  border: 1px solid black;
+}
+.messages {
+  height: 450px !important;
+  overflow-y: auto !important;
+}
+.align-middle {
+  height: 15px !important;
+}
+.send {
+  width: 100px !important;
+  font-size: 16px !important;
+}
+.list-group {
+  width: 300px;
+}
+.containers {
+  margin-top: 110px;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+#onlineusers {
+  padding: 15px;
+  border: 2px solid black;
+  width: 322px;
+}
+
+#time {
+  font-size: 10px !important;
+  color: #bdbdbd !important;
+}
