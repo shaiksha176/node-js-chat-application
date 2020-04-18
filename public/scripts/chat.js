@@ -49,13 +49,13 @@ sendButton.addEventListener("click", () => {
   console.log(message.value.length);
   let time = moment().format("h: mm:  a");
   console.log(time);
-  if (message.value.trim.length == 0) {
-    alert("please type in a message");
-  }
+
   if (message.value.length > 0 && message.value.length < 30) {
     socket.emit("toAllUsers", { name, message: message.value, time });
   } else {
-    alert("Message should not exceed 30 characters");
+    if (message.value.trim.length == 0) {
+      alert("please type in a message");
+    } else alert("Message should not exceed 30 characters");
   }
   message.value = "";
 });

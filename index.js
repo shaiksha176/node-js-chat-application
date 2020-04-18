@@ -59,6 +59,8 @@ io.on("connection", function (socket) {
     io.emit("afterexit", users);
   });
 });
-http.listen(8080, function () {
+const port = process.env.PORT || 8080;
+
+http.listen(port, function () {
   console.log("listening on *:8080");
 });
